@@ -58,5 +58,5 @@
 		}
 	}
 
-	customElements.define("de-jnc-sample-jnc_box_builder", JNCBoxBuilderPanel);
+	customElements.define("de-jnc-sample-jncboxbuilder", JNCBoxBuilderPanel);
 })();

@@ -11,22 +11,22 @@
 	"webcomponents": [
 		{
 			"kind": "main",
-			"tag": "de-jnc-sample-jnc_box",
-			"url": "/jnc_box.js",
+			"tag": "de-jnc-sample-jncbox",
+			"url": "/jncbox.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "styling",
-			"tag": "de-jnc-sample-jnc_box_styling",
-			"url": "jnc_box_styling.js",
+			"tag": "de-jnc-sample-jncboxstyling",
+			"url": "jncboxstyling.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "builder",
-			"tag": "de-jnc-sample-jnc_box_builder",
-			"url": "/jnc_box_builder.js",
+			"tag": "de-jnc-sample-jncboxbuilder",
+			"url": "/jncboxbuilder.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
@@ -35,12 +35,12 @@
 		"color": {
 			"type": "string",
 			"description": "Hintergrundfarbe",
-			"default": "red"
+			"default": "black"
 		},
 		"opacity": {
 			"type": "number",
 			"description": "Durchsichtigkeit",
-			"default": 1
+			"default": 100
 		},
 		"width": {
 			"type": "integer",

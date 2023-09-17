@@ -7,7 +7,7 @@
 	img.setAttribute("height", "500");
 	img.setAttribute("alt", "Wasserturm");
 
-	class JNC_Box extends HTMLElement {
+	class JNCBox extends HTMLElement {
 		constructor() {
 			super(); 
 			let shadowRoot = this.attachShadow({mode: "open"});
@@ -33,5 +33,5 @@
 		}
 	}
 
-	customElements.define("de-jnc-sample-jnc_box", JNC_Box);
+	customElements.define("de-jnc-sample-jncbox", JNCBox);
 })();

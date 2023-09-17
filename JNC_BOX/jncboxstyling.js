@@ -56,5 +56,5 @@
 			return this._shadowRoot.getElementById("styling_color").value;
 		}
 	}
-customElements.define("de-jnc-sample-jnc_box_styling", JNCBoxStylingPanel);
+customElements.define("de-jnc-sample-jncboxstyling", JNCBoxStylingPanel);
 })();
