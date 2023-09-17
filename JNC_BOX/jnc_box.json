@@ -4,7 +4,7 @@
 	"name": "JNC Sample Box",
 	"description": "JNC Very Simple Sample box",
 	"newInstancePrefix": "JNC_Box",
-	"icon": "https://github.com/juergennoe/sac_widgets/blob/main/sample_Widget/icon.png",
+	"icon": "/icon.png",
 	"vendor": "JNC",
 	"eula": "",
 	"license": "",
@@ -12,21 +12,21 @@
 		{
 			"kind": "main",
 			"tag": "de-jnc-sample-jnc_box",
-			"url": "https://github.com/juergennoe/sac_widgets/blob/main/sample_Widget/jnc_box.js",
+			"url": "/jnc_box.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "styling",
-			"tag": "de-jnc-sample-jnc_box-styling",
-			"url": "https://github.com/juergennoe/sac_widgets/blob/main/sample_Widget/jnc_box_styling.js",
+			"tag": "de-jnc-sample-jnc_box_styling",
+			"url": "jnc_box_styling.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "builder",
-			"tag": "de-jnc-sample-jnc_box-builder",
-			"url": "https://github.com/juergennoe/sac_widgets/blob/main/sample_Widget/jnc_box_builder.js",
+			"tag": "de-jnc-sample-jnc_box_builder",
+			"url": "/jnc_box_builder.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
@@ -75,5 +75,3 @@
 		}
 	}
 }
-
- 

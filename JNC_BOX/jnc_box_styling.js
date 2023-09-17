@@ -1,9 +1,9 @@
 (function()  {
 	let template = document.createElement("template");
-	template.innerHTML = `
+	template.innerHTML = '
 		<form id="form">
 			<fieldset>
-				<legend>Colored Box Properties</legend>
+				<legend>JNC Image Styles</legend>
 				<table>
 					<tr>
 						<td>Color</td>
@@ -13,9 +13,9 @@
 				<input type="submit" style="display:none;">
 			</fieldset>
 		</form>
-	`;
+	';
 
-	class ColoredBoxStylingPanel extends HTMLElement {
+	class JNCBoxStylingPanel extends HTMLElement {
 		constructor() {
 			super();
 			this._shadowRoot = this.attachShadow({mode: "open"});
@@ -44,6 +44,5 @@
 			return this._shadowRoot.getElementById("styling_color").value;
 		}
 	}
-customElements.define("de-jnc-sample-jnc_box-styling", ColoredBoxStylingPanel);
-}
-)
+customElements.define("de-jnc-sample-jnc_box_styling", JNCBoxStylingPanel);
+})();

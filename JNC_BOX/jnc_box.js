@@ -1,16 +1,11 @@
 (function() { 
 	let template = document.createElement("template");
-	template.innerHTML = `
-		<style>
-		:host {
-			border-radius: 25px;
-			border-width: 4px;
-			border-color: red;
-			border-style: solid;
-			display: block;
-		} 
-		</style> 
-	`;
+	let img = document.createElement("img");
+	img.src = 'Wasserturm.jpg';
+	img.width = 250;
+	img.height = 500;
+	img.alt = 'Wasserturm'
+	template.appendChild(img);
 
 	class JNC_Box extends HTMLElement {
 		constructor() {
@@ -38,5 +33,5 @@
 		}
 	}
 
-	customElements.define("de-jnc-sample-jnc_box", ColoredBox);
+	customElements.define("de-jnc-sample-jnc_box", JNC_Box);
 })();
