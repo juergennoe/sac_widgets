@@ -1,31 +1,31 @@
 {
-	"id": "com.sap.sample.coloredbox",
+	"id": "de.jnc.sample.jnc_box",
 	"version": "1.0.0",
-	"name": "Colored Box",
-	"description": "A colored box",
-	"newInstancePrefix": "ColoredBox",
-	"icon": "https://www.sample.com/customwidgets/coloredbox/icon.png",
-	"vendor": "SAP",
+	"name": "Sample Box",
+	"description": "Sample Simple box",
+	"newInstancePrefix": "JNC_Box",
+	"icon": "https://github.com/juergennoe/sac_widgets/blob/main/sample_Widget/icon.png",
+	"vendor": "JNC",
 	"eula": "",
 	"license": "",
 	"webcomponents": [
 		{
 			"kind": "main",
-			"tag": "com-sap-sample-coloredbox",
+			"tag": "de-jnc-sample-jnc_box",
 			"url": "https://www.sample.com/customwidgets/coloredbox/coloredbox.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "styling",
-			"tag": "com-sap-sample-coloredbox-styling",
+			"tag": "de-jnc-sample-jnc_box-styling",
 			"url": "https://www.sample.com/customwidgets/coloredbox/coloredbox_styling.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "builder",
-			"tag": "com-sap-sample-coloredbox-builder",
+			"tag": "de-jnc-sample-jnc_box-builder",
 			"url": "https://www.sample.com/customwidgets/coloredbox/coloredbox_builder.js",
 			"integrity": "",
 			"ignoreIntegrity": true
@@ -71,7 +71,7 @@
 	},
 	"events": {
 		"onClick": {
-			"description": "Called when the user clicks the Colored Box."
+			"description": "Called when the user clicks the JNC Box."
 		}
 	}
 }
