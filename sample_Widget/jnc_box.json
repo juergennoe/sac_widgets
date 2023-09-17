@@ -1,8 +1,8 @@
 {
 	"id": "de.jnc.sample.jnc_box",
 	"version": "1.0.0",
-	"name": "Sample Box",
-	"description": "Sample Simple box",
+	"name": "JNC Sample Box",
+	"description": "JNC Very Simple Sample box",
 	"newInstancePrefix": "JNC_Box",
 	"icon": "https://github.com/juergennoe/sac_widgets/blob/main/sample_Widget/icon.png",
 	"vendor": "JNC",
@@ -12,21 +12,21 @@
 		{
 			"kind": "main",
 			"tag": "de-jnc-sample-jnc_box",
-			"url": "https://www.sample.com/customwidgets/coloredbox/coloredbox.js",
+			"url": "https://github.com/juergennoe/sac_widgets/blob/main/sample_Widget/jnc_box.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "styling",
 			"tag": "de-jnc-sample-jnc_box-styling",
-			"url": "https://www.sample.com/customwidgets/coloredbox/coloredbox_styling.js",
+			"url": "https://github.com/juergennoe/sac_widgets/blob/main/sample_Widget/jnc_box_styling.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "builder",
 			"tag": "de-jnc-sample-jnc_box-builder",
-			"url": "https://www.sample.com/customwidgets/coloredbox/coloredbox_builder.js",
+			"url": "https://github.com/juergennoe/sac_widgets/blob/main/sample_Widget/jnc_box_builder.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
