@@ -1,0 +1,48 @@
+{
+    "name": "JNC_PieChart",
+    "description": "JNC Sample Pie Chart",
+    "newInstancePrefix": "JNC_PieChart",
+    "eula": "",
+    "license": "",
+    "id": "JNC_PieChart",
+    "version": "1.0.0",
+    "icon": "/icon.png",
+    "vendor": "JNC",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "pie-chart-widget",
+            "url": "/PieChartWidget.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "width": {
+            "type": "integer",
+            "default": 750
+        },
+        "height": {
+            "type": "integer",
+            "default": 700
+        }
+    },
+    "methods": {},
+    "events": {},
+    "dataBindings": {
+        "myDataBinding": {
+            "feeds": [
+                {
+                    "id": "dimensions",
+                    "description": "Dimensions",
+                    "type": "dimension"
+                },
+                {
+                    "id": "measures",
+                    "description": "Measures",
+                    "type": "mainStructureMember"
+                }
+            ]
+        }
+    }
+}

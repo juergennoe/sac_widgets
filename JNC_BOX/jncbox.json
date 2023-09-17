@@ -1,9 +1,9 @@
 {
-	"id": "de.jnc.sample.jnc_box",
+	"id": "de.jnc.sample.jncbox",
 	"version": "1.0.0",
-	"name": "JNC Sample Box",
-	"description": "JNC Very Simple Sample box",
-	"newInstancePrefix": "JNC_Box",
+	"name": "JNC Rote Box",
+	"description": "Eine sehr einfache rote Bilder-Box",
+	"newInstancePrefix": "JNCBox",
 	"icon": "/icon.png",
 	"vendor": "JNC",
 	"eula": "",
@@ -11,22 +11,22 @@
 	"webcomponents": [
 		{
 			"kind": "main",
-			"tag": "de-jnc-sample-jnc_box",
-			"url": "/jnc_box.js",
+			"tag": "de-jnc-sample-jncbox",
+			"url": "/jncbox.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "styling",
-			"tag": "de-jnc-sample-jnc_box_styling",
-			"url": "jnc_box_styling.js",
+			"tag": "de-jnc-sample-jncboxstyling",
+			"url": "jncboxstyling.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "builder",
-			"tag": "de-jnc-sample-jnc_box_builder",
-			"url": "/jnc_box_builder.js",
+			"tag": "de-jnc-sample-jncboxbuilder",
+			"url": "/jncboxbuilder.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
@@ -34,44 +34,44 @@
 	"properties": {
 		"color": {
 			"type": "string",
-			"description": "Background color",
-			"default": "red"
+			"description": "Hintergrundfarbe",
+			"default": "black"
 		},
 		"opacity": {
 			"type": "number",
-			"description": "Opacity",
-			"default": 1
+			"description": "Durchsichtigkeit",
+			"default": 100
 		},
 		"width": {
 			"type": "integer",
-			"default": 100
+			"default": 250
 		},
 		"height": {
 			"type": "integer",
-			"default": 100
+			"default": 500
 		}
 	},
 	"methods": {
 		"setColor": {
-			"description": "Sets the background color.",
+			"description": "Hintergrundfabe setzen",
 			"parameters": [
 				{
 					"name": "newColor",
 					"type": "string",
-					"description": "The new background color"
+					"description": "Neue Hintergrundfarbe"
 				}
 			],
 			"body": "this.color = newColor;"
 		},
 		"getColor": {
 			"returnType": "string",
-			"description": "Returns the background color.",
+			"description": "Gibt Hintergrundfarbe zurück",
 			"body": "return this.color;"
 		}
 	},
 	"events": {
 		"onClick": {
-			"description": "Called when the user clicks the JNC Box."
+			"description": "Wird aufgerufen, wenn Benutzer JNC Box anklickt."
 		}
 	}
 }

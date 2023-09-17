@@ -1,13 +1,13 @@
 (function() { 
 	let template = document.createElement("template");
 	let img = document.createElement("img");
-	img.src = 'Wasserturm.jpg';
-	img.width = 250;
-	img.height = 500;
-	img.alt = 'Wasserturm'
 	template.appendChild(img);
+	img.setAttribute("src", "Wasserturm.jpg");
+	img.setAttribute("width", "250");
+	img.setAttribute("height", "500");
+	img.setAttribute("alt", "Wasserturm");
 
-	class JNC_Box extends HTMLElement {
+	class JNCBox extends HTMLElement {
 		constructor() {
 			super(); 
 			let shadowRoot = this.attachShadow({mode: "open"});
@@ -33,5 +33,5 @@
 		}
 	}
 
-	customElements.define("de-jnc-sample-jnc_box", JNC_Box);
+	customElements.define("de-jnc-sample-jncbox", JNCBox);
 })();
