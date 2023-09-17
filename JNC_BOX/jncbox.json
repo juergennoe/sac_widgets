@@ -1,9 +1,9 @@
 {
-	"id": "de.jnc.sample.jnc_box",
+	"id": "de.jnc.sample.jncbox",
 	"version": "1.0.0",
 	"name": "JNC Rote Box",
 	"description": "Eine sehr einfache rote Bilder-Box",
-	"newInstancePrefix": "JNC_Box",
+	"newInstancePrefix": "JNCBox",
 	"icon": "/icon.png",
 	"vendor": "JNC",
 	"eula": "",
