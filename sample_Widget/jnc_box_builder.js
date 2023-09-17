@@ -49,5 +49,5 @@
 		}
 	}
 
-	customElements.define("com-sap-sample-coloredbox-builder", ColoredBoxBuilderPanel);
+	customElements.define("de-jnc-sample-jnc_box-builder", ColoredBoxBuilderPanel);
 })();

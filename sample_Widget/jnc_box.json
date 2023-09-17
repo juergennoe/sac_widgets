@@ -11,21 +11,21 @@
 	"webcomponents": [
 		{
 			"kind": "main",
-			"tag": "de-jnc-sample-coloredbox",
+			"tag": "de-jnc-sample-jnc_box",
 			"url": "https://www.sample.com/customwidgets/coloredbox/coloredbox.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "styling",
-			"tag": "com-sap-sample-coloredbox-styling",
+			"tag": "de-jnc-sample-jnc_box-styling",
 			"url": "https://www.sample.com/customwidgets/coloredbox/coloredbox_styling.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "builder",
-			"tag": "com-sap-sample-coloredbox-builder",
+			"tag": "de-jnc-sample-jnc_box-builder",
 			"url": "https://www.sample.com/customwidgets/coloredbox/coloredbox_builder.js",
 			"integrity": "",
 			"ignoreIntegrity": true
@@ -71,7 +71,7 @@
 	},
 	"events": {
 		"onClick": {
-			"description": "Called when the user clicks the Colored Box."
+			"description": "Called when the user clicks the JNC Box."
 		}
 	}
 }
