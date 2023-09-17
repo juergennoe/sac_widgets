@@ -1,8 +1,5 @@
 (function()  {
 	let template = document.createElement("template");
-    let para1 = document.createElement("p");
-    para1.innerText = "Mein Stylingpanel";
-    template.appendChild(para1);
 	let form = document.createElement("form");
     template.appendChild(form);
 	let fieldset = document.createElement("fieldset");
