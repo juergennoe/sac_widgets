@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+
+<script>
+    let para1 = document.createElement("p");
+    para1.innerText = "Mein Absatz";
+    document.body.appendChild(para1);
+	let template = document.createElement("template");
+	let form = document.createElement("form");
+    document.body.appendChild(form);
+	let fieldset = document.createElement("fieldset");
+    document.body.appendChild(fieldset);
+	let legend = document.createElement("legend");
+	legend.innerText = "JNC Box Styling";
+	document.body.appendChild(legend);
+    let table = document.createElement("table");
+	document.body.appendChild(table);
+	let tablerow = document.createElement("tr");
+    document.body.appendChild(tablerow);
+	let tablecol1 = document.createElement("td");
+	tablecol1.innerText = "Color";
+    document.body.appendChild(tablecol1);
+	let tablecol2 = document.createElement("td");
+    document.body.appendChild(tablecol2);
+	let input1 = document.createElement("input");
+	input1.setAttribute ("id","styling_color");
+	input1.setAttribute ("type", "text");
+	input1.setAttribute("size", "40");
+	input1.setAttribute( "maxLength","40");
+	document.body.appendChild(input1);
+	let input2 = createElement("input");
+	input2.setAttribute( "type", "submit");
+	input2.setAttribute ("style", "display:none");
+	document.body.appendChild(input2);
+</script>
+
+</body>
+</html>
