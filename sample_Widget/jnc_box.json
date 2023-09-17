@@ -18,14 +18,14 @@
 		},
 		{
 			"kind": "styling",
-			"tag": "de-jnc-sample-jnc_box-styling",
+			"tag": "de-jnc-sample-jnc_box_styling",
 			"url": "jnc_box_styling.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "builder",
-			"tag": "de-jnc-sample-jnc_box-builder",
+			"tag": "de-jnc-sample-jnc_box_builder",
 			"url": "/jnc_box_builder.js",
 			"integrity": "",
 			"ignoreIntegrity": true
@@ -75,5 +75,3 @@
 		}
 	}
 }
-
- 

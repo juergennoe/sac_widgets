@@ -3,7 +3,7 @@
 	template.innerHTML = `
 		<form id="form">
 			<fieldset>
-				<legend>Colored Box Properties</legend>
+				<legend>JNC Box Properties</legend>
 				<table>
 					<tr>
 						<td>Opacity</td>
@@ -49,5 +49,5 @@
 		}
 	}
 
-	customElements.define("de-jnc-sample-jnc_box-builder", ColoredBoxBuilderPanel);
+	customElements.define("de-jnc-sample-jnc_box_builder", JNCBoxBuilderPanel);
 })();

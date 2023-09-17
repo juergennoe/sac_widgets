@@ -3,7 +3,7 @@
 	template.innerHTML = `
 		<form id="form">
 			<fieldset>
-				<legend>Colored Box Properties</legend>
+				<legend>JNC Box Properties</legend>
 				<table>
 					<tr>
 						<td>Color</td>
@@ -44,6 +44,5 @@
 			return this._shadowRoot.getElementById("styling_color").value;
 		}
 	}
-customElements.define("de-jnc-sample-jnc_box-styling", ColoredBoxStylingPanel);
-}
-)
+customElements.define("de-jnc-sample-jnc_box_styling", JNCBoxStylingPanel);
+})();
