@@ -1,9 +1,9 @@
 (function()  {
 	let template = document.createElement("template");
-	template.innerHTML = `
+	template.innerHTML = '
 		<form id="form">
 			<fieldset>
-				<legend>JNC Box Properties</legend>
+				<legend>JNC Box Builder</legend>
 				<table>
 					<tr>
 						<td>Opacity</td>
@@ -19,9 +19,9 @@
 			padding: 1em 1em 1em 1em;
 		}
 		</style>
-	`;
+	';
 
-	class ColoredBoxBuilderPanel extends HTMLElement {
+	class JNCBoxBuilderPanel extends HTMLElement {
 		constructor() {
 			super();
 			this._shadowRoot = this.attachShadow({mode: "open"});
