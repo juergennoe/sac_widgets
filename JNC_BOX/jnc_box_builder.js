@@ -1,25 +1,30 @@
 (function()  {
 	let template = document.createElement("template");
-	template.innerHTML = '
-		<form id="form">
-			<fieldset>
-				<legend>JNC Box Builder</legend>
-				<table>
-					<tr>
-						<td>Opacity</td>
-						<td><input id="builder_opacity" type="text" size="5" maxlength="5"></td>
-					</tr>
-				</table>
-				<input type="submit" style="display:none;">
-			</fieldset>
-		</form>
-		<style>
-		:host {
-			display: block;
-			padding: 1em 1em 1em 1em;
-		}
-		</style>
-	';
+	let form = createElement("form");
+	let fieldset = createElement("fieldset");
+	let legend = createElement("legend");
+	legend.content = "JNC Box Builder";
+	fieldset.appendChild("legend");
+    let table = createElement("table");
+	let tablerow = createElemet("tr");
+	let tablecol1 = createElment("td");
+	tablecol1 = "Opacity";
+    tablerow.appendChild(tablecol1);
+	let tablecol2 = createElment("td");
+	let input1 = createElement("input");
+	input1.id="builder_opacity";
+	input1.type="text";
+	input1.size="5";
+	input1.maxlength="5";
+	tablecol2.appendChild(input1);
+	tablerow.appendChild(tablecol2);
+	table.appendChild(tablerow);
+	fieldset.appendChild(table);
+	let input2 = createElement("input");
+	input2.type ="submit";
+	input2.style = "display:none;"
+	fieldset.appendChild(input2);
+	form.appendChild(fieldset);
 
 	class JNCBoxBuilderPanel extends HTMLElement {
 		constructor() {
