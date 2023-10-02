@@ -1,0 +1,32 @@
+{
+    "name": "JNC_Audio",
+    "description": "JNC Sample Audio",
+    "newInstancePrefix": "JNC_Audio",
+    "eula": "",
+    "license": "",
+    "id": "JNC_Audio",
+    "version": "1.0.0",
+    "icon": "/icon.png",
+    "vendor": "JNC",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "jnc-audio-widget",
+            "url": "/AudioWidget.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "width": {
+            "type": "integer",
+            "default": 750
+        },
+        "height": {
+            "type": "integer",
+            "default": 700
+        }
+    },
+    "methods": {},
+    "events": {}
+}
