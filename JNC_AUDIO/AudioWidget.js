@@ -1,7 +1,7 @@
 (function() {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
-          <div class="audio-container"> <audio controls> <source src="https://github.com/juergennoe/sac_widgets/blob/main/JNC_AUDIO/jnc-sample.m4a" type="audio/mpeg">  </audio></div>   
+          <div class="audio-container"> <audio controls> <source src="https://juergennoe.github.io/sac_widgets/JNC_AUDIO/jnc-sample.m4a" type="audio/mpeg">  </audio></div>   
         <div id="audio_welcome"></div>               
                </div>
         </div>
