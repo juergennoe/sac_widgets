@@ -21,5 +21,5 @@ onCustomWidgetAfterUpdate(changedProperties) {
 }
 }
 
-    customElements.define('jnc-audio-widget', JNC_AudioWidget);
+    customElements.define('jnc-audio-widget1', JNC_AudioWidget);
 })();
