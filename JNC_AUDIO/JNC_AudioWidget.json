@@ -1,32 +1,63 @@
 {
-    "name": "JNC_Audio",
-    "description": "JNC Audio Widget",
-    "newInstancePrefix": "JNC_Audio",
-    "eula": "",
-    "license": "",
-    "id": "JNC_Audio",
-    "version": "1.0.0",
-    "icon": "/icon.png",
-    "vendor": "JNC",
-    "webcomponents": [
-        {
-            "kind": "main",
-            "tag": "audio-widget",
-            "url": "/JNC_AudioWidget.js",
-            "integrity": "",
-            "ignoreIntegrity": true
-        }
-    ],
-    "properties": {
-        "width": {
-            "type": "integer",
-            "default": 750
-        },
-        "height": {
-            "type": "integer",
-            "default": 700
-        }
-    },
-    "methods": {},
-    "events": {}
+	"id": "de.jnc.sample.jncaudio",
+	"version": "1.0.0",
+	"name": "JNC Audio",
+	"description": "Beispiel für Verwendung von Audio",
+	"newInstancePrefix": "JNCAudio",
+	"icon": "/icon.png",
+	"vendor": "JNC",
+	"eula": "",
+	"license": "",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "de-jnc-sample-jncaudio",
+			"url": "/JNC_AudioWidget.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		}
+	],
+	"properties": {
+		"color": {
+			"type": "string",
+			"description": "Hintergrundfarbe",
+			"default": "black"
+		},
+		"opacity": {
+			"type": "number",
+			"description": "Durchsichtigkeit",
+			"default": 100
+		},
+		"width": {
+			"type": "integer",
+			"default": 250
+		},
+		"height": {
+			"type": "integer",
+			"default": 500
+		}
+	},
+	"methods": {
+		"setColor": {
+			"description": "Hintergrundfabe setzen",
+			"parameters": [
+				{
+					"name": "newColor",
+					"type": "string",
+					"description": "Neue Hintergrundfarbe"
+				}
+			],
+			"body": "this.color = newColor;"
+		},
+		"getColor": {
+			"returnType": "string",
+			"description": "Gibt Hintergrundfarbe zurück",
+			"body": "return this.color;"
+		}
+	},
+	"events": {
+		"onClick": {
+			"description": "Wird aufgerufen, wenn Benutzer JNCAudio anklickt."
+		}
+	}
 }

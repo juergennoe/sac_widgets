@@ -1,29 +1,36 @@
-(function() {
-    let tmpl = document.createElement('template');
-    tmpl.innerHTML = `
-    <audio controls>
-    <source src="/jnc-sample.m4a" type="audio/mpeg">
-  Your browser does not support the audio element.
-  </audio>    `;
+(function() { 
+	let template = document.createElement("template");
+	let img = document.createElement("audio");
+	template.appendChild(img);
+	img.setAttribute("src", "jnc-sample.m4a");
+	img.setAttribute("type", "audio/mpeg");
+	img.setAttribute("alt", "Audio Comment");
 
-    class JNC_AudioWidget extends HTMLElement {
-        constructor() {
-            super();
-            this._shadowRoot = this.attachShadow({mode: 'open'});
-            this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
-            this._props = {};
+	class JNC_AudioWidget extends HTMLElement {
+		constructor() {
+			super(); 
+			let shadowRoot = this.attachShadow({mode: "open"});
+			shadowRoot.appendChild(template.content.cloneNode(true));
+			this.addEventListener("click", event => {
+				var event = new Event("onClick");
+				this.dispatchEvent(event);
+			});
+			this._props = {};
+		}
 
-            // Load D3.js
-            const script = document.createElement('script');
-            script.src = 'https://d3js.org/d3.v5.min.js';
-            script.onload = () => this._ready = true;
-            this._shadowRoot.appendChild(script);
-        }
+		onCustomWidgetBeforeUpdate(changedProperties) {
+			this._props = { ...this._props, ...changedProperties };
+		}
 
-        onCustomWidgetBeforeUpdate(changedProperties) {
-            this._props = { ...this._props, ...changedProperties };
-        }
-    
-}
-    customElements.define('jnc-audio-widget', JNC_AudioWidget);
+		onCustomWidgetAfterUpdate(changedProperties) {
+			if ("color" in changedProperties) {
+				this.style["background-color"] = changedProperties["color"];
+			}
+			if ("opacity" in changedProperties) {
+				this.style["opacity"] = changedProperties["opacity"];
+			}
+		}
+	}
+
+	customElements.define("de-jnc-sample-jncaudio", JNC_AudioWidget);
 })();
